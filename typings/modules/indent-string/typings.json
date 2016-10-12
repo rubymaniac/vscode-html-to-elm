@@ -1,0 +1,10 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/types/npm-indent-string/9d6fef8eeccf2b9d9690b29b9730635ccef1b43c/typings.json",
+    "raw": "registry:npm/indent-string#2.0.0+20160723033700",
+    "main": "index.d.ts",
+    "name": "indent-string",
+    "type": "typings"
+  }
+}

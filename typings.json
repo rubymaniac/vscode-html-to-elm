@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "htmlparser2": "registry:npm/htmlparser2#3.9.0+20160723033700",
+    "indent-string": "registry:npm/indent-string#2.0.0+20160723033700"
+  }
+}

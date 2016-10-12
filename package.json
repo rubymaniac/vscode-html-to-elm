@@ -1,0 +1,46 @@
+{
+  "name": "vscode-html-to-elm",
+  "displayName": "VSCode HTML to Elm",
+  "description": "VSCode plugin to convert HTML to Elm",
+  "version": "0.0.1",
+  "publisher": "Rubymaniac",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/rubymaniac/vscode-html-to-elm/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rubymaniac/vscode-html-to-elm.git"
+  },
+  "scripts": {
+    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "typescript": "^1.8.5",
+    "vscode": "^0.11.0"
+  },
+  "dependencies": {
+    "htmlparser2": "^3.9.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:htmlToElm.convert"
+  ],
+  "main": "./out/src/main",
+  "contributes": {
+    "commands": [
+      {
+        "command": "htmlToElm.convert",
+        "title": "HTML: convert to Elm",
+        "description": "Converts your selection to Elm by assuming that your selection is HTML code"
+      }
+    ]
+  }
+}
