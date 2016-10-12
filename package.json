@@ -1,6 +1,6 @@
 {
   "name": "vscode-html-to-elm",
-  "displayName": "VSCode HTML to Elm",
+  "displayName": "HTML to Elm",
   "description": "VSCode plugin to convert HTML to Elm",
   "version": "0.0.1",
   "publisher": "Rubymaniac",

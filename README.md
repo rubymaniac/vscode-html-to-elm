@@ -32,6 +32,10 @@ Well, the usage is pretty simple.
 4. Select the command and hit return
 5. Profit
 
+In action:
+
+[[https://github.com/rubymaniac/vscode-html-to-elm/blob/master/img/html-to-elm.gif|alt=html-to-elm]]
+
 ## Contribute
 
 For any bugs and feature requests please open an issue. For code contributions please create a pull request. Enjoy!
