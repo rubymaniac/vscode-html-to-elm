@@ -2,11 +2,6 @@
 
 This extension adds support for converting HTML to Elm code. It uses the [htmlparser2](https://github.com/fb55/htmlparser2) to parse the HTML and construct Elm code.
 
-
-## Prerequisites
-
-This extension needs direnv installed to work. Please refer [here](https://github.com/direnv/direnv#install) for installation instructions.
-
 ## Install
 
 Via Quick Open:
@@ -40,6 +35,10 @@ Well, the usage is pretty simple.
 ## Contribute
 
 For any bugs and feature requests please open an issue. For code contributions please create a pull request. Enjoy!
+
+## Other
+
+If you use Atom then check out [this](https://github.com/CodeTownOfficial/html-to-elm) plugin which I followed to create this VSCode extension.
 
 ## LICENSE
 
