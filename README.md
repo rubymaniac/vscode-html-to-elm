@@ -34,7 +34,7 @@ Well, the usage is pretty simple.
 
 In action:
 
-[[https://github.com/rubymaniac/vscode-html-to-elm/blob/master/img/html-to-elm.gif|alt=html-to-elm]]
+![usage in action](img/html-to-elm.gif)
 
 ## Contribute
 
