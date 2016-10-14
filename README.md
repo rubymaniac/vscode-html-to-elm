@@ -14,7 +14,7 @@ Via Quick Open:
 Via the Extensions tab:
 
 1. Click the extensions tab or press `cmd+shift+x`
-2. Search for *direnv*
+2. Search for *html-to-elm*
 3. Click the *Install* button, then the *Enable* button
 
 Via the command line:

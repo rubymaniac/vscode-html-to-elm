@@ -6,9 +6,8 @@ import * as parser from './parser';
 let convert = () => {
     let editor = vscode.window.activeTextEditor;
     let selectedText = editor.document.getText(editor.selection);
-    var firstLine = editor.document.lineAt(editor.selection.start.line).text;
-    var tabSize = editor.options.tabSize;
-    var withSpaces = editor.options.insertSpaces;
+    let tabSize = editor.options.tabSize;
+    let withSpaces = editor.options.insertSpaces;
 
     if (selectedText.length === 0) {
         vscode.window.showWarningMessage('No selection has been made. Select some HTML text and try again.');
