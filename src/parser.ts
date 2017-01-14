@@ -41,7 +41,7 @@ export function convert(html: string, options: { indent: { with: string, size: n
     };
     let onText = (rawText: string): void => {
         let text = utils.trim(rawText);
-        if (text.length) {
+        if (text.length !== 0) {
             elm += ` text "${text}" `;
         }
     };
