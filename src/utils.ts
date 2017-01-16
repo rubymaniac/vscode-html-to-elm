@@ -1,9 +1,5 @@
 'use strict';
 
-export function trim(str: string): string {
-    return str.replace(/^[\n\t ]+|[\n\t ]+$/g, '');
-}
-
 export function indent(depth: number, size?: number, str?: string): string {
     return (str || ' ').repeat(depth * (size || 2));
 }
