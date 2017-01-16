@@ -1,10 +1,5 @@
 'use strict';
 
-export function trim(str: string): string {
-    let rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
-    return str.replace(rtrim, '');
-}
-
 export function indent(depth: number, size?: number, str?: string): string {
     return (str || ' ').repeat(depth * (size || 2));
 }
