@@ -29,7 +29,7 @@ export function convert(html: string, options: { indent: { with: string, size: n
                 return attribute + ' [ ' + utils.styleToElm(value).join(', ') + ' ]';
             }
             if (attribute === 'type') {
-                attribute = 'type\'';
+                attribute = 'type_';
             }
             return attribute + ' "' + value + '"';
         });
