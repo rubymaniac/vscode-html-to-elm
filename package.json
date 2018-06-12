@@ -2,7 +2,7 @@
   "name": "vscode-html-to-elm",
   "displayName": "HTML to Elm",
   "description": "VSCode plugin to convert HTML to Elm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "Rubymaniac",
   "license": "MIT",
   "engines": {
