@@ -4,6 +4,16 @@ import {Parser} from 'htmlparser2';
 import * as utils from './utils';
 
 
+if (!String.prototype.trim) {
+    (function () {
+        let rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+        String.prototype.trim = function () {
+            return this.replace(rtrim, '');
+        }
+    })();
+}
+
+
 export function convert(html: string, options: { indent: { with: string, size: number } }): string {
     let elm = '';
     let indentSize = options.indent.size;
@@ -19,7 +29,7 @@ export function convert(html: string, options: { indent: { with: string, size: n
                 return attribute + ' [ ' + utils.styleToElm(value).join(', ') + ' ]';
             }
             if (attribute === 'type') {
-                attribute = 'type\'';
+                attribute = 'type_';
             }
             return attribute + ' "' + value + '"';
         });
@@ -40,8 +50,8 @@ export function convert(html: string, options: { indent: { with: string, size: n
         elm += tag.join('');
     };
     let onText = (rawText: string): void => {
-        let text = utils.trim(rawText);
-        if (text.length) {
+        let text = rawText.trim();
+        if (text.length !== 0) {
             elm += ` text "${text}" `;
         }
     };
